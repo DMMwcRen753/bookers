@@ -1,11 +1,15 @@
 <div>
   <%= flash[:notice] %>
 </div>
-<h2>Title:</h2>
-<p><%= @book.title %></p>
 
-<h2>Body:</h2>
-<p><%= @book.body %></p>
+<div class="field">
+  <h2>Title:</h2>
+  <p><%= @book.title %></p>
+</div>
+<div class="field">
+  <h2>Body:</h2>
+  <p><%= @book.body %></p>
+</div>
 
 <%= link_to "edit", edit_book_path(@book.id) %>
      | 
